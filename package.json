@@ -9,6 +9,7 @@
   "name": "dataroom",
   "version": "1.0.0",
   "main": "server.js",
+  "homepage": "https://functionland.github.io/dataroom",
   "keywords": [],
   "author": "",
   "license": "ISC",
