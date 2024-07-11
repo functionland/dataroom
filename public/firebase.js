@@ -1,6 +1,6 @@
 function loadConfig() {
     return new Promise((resolve, reject) => {
-        if (window.location.hostname === 'localhost') {
+        if (true) {
             fetch('/env.json')
                 .then(response => response.json())
                 .then(env => {
