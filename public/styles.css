@@ -192,19 +192,19 @@ body {
 /* Responsive Styles */
 @media (max-width: 1200px) {
     .document {
-        width: calc(33.333% - 20px);
+        width: calc(33.333% - 40px);
     }
 }
 
 @media (max-width: 900px) {
     .document {
-        width: calc(50% - 20px);
+        width: calc(50% - 40px);
     }
 }
 
 @media (max-width: 600px) {
     .document {
-        width: 50%;
+        width: calc(50% - 40px);
     }
 }
 
