@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Room</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="banner">
+            <div class="logo">
+                <img src="logo.png" alt="Functionland Logo">
+            </div>
+            <div class="company-name">Functionland</div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="content">
+        <div id="overview-documents" class="section">
+            <h2>Overview Documents</h2>
+            <div id="overview-documents-list" class="documents-list"></div>
+        </div>
+        <div id="detailed-documents" class="section">
+            <h2>Detailed Documents</h2>
+            <div id="detailed-documents-list" class="documents-list"></div>
+        </div>
+        <div id="technical-documents" class="section">
+            <h2>Technical Documents</h2>
+            <div id="technical-documents-list" class="documents-list"></div>
+        </div>
+    </div>
+
+    <!-- Email Modal -->
+    <div id="emailModal" class="modal">
+        <div class="modal-content">
+            <label for="emailInput">Enter your email to access the documents:</label>
+            <input type="email" id="emailInput" required>
+            <button id="submitEmail">Submit</button>
+            <button id="cancelEmail">Cancel</button>
+        </div>
+    </div>
+
+    <script src="env.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.10.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.js"></script>
+    <script src="firebase.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
