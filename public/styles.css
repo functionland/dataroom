@@ -204,7 +204,7 @@ body {
 
 @media (max-width: 600px) {
     .document {
-        width: 100%;
+        width: 50%;
     }
 }
 
