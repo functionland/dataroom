@@ -1,18 +1,17 @@
 {
-  "dependencies": {
-    "dotenv": "^16.4.5",
-    "express": "^4.19.2",
-    "react-scripts": "^5.0.1"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
   "name": "dataroom",
   "version": "1.0.0",
   "main": "server.js",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "build": "npm run build:html",
+    "build:html": "cp -R public dist",
+    "deploy": "gh-pages -d dist"
+  },
   "homepage": "https://functionland.github.io/dataroom",
   "keywords": [],
   "author": "",
