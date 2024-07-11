@@ -11,12 +11,22 @@
     <!-- Header -->
     <header>
         <div class="banner">
-            <div class="logo">
-                <img src="logo.png" alt="Functionland Logo">
+            <div class="logo-container">
+                <div class="logo">
+                    <img src="assets/logo.png" alt="Functionland Logo">
+                </div>
+                <div class="company-name">Investors' Material [CONFIDENTIAL]</div>
             </div>
-            <div class="company-name">Functionland</div>
         </div>
     </header>
+
+    <!-- Loading Message -->
+    
+    <div id="loadingMessage" class="modal">
+        <div class="loading-message">
+            <div class="loading-message">Loading requested document...</div>
+        </div>
+    </div>
 
     <!-- Main Content -->
     <div class="content">
@@ -44,10 +54,10 @@
         </div>
     </div>
 
-    <script src="env.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.10.0/firebase-analytics.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.10.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.10.0/firebase-analytics-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore-compat.js"></script>
+
     <script src="firebase.js"></script>
     <script src="scripts.js"></script>
 </body>
