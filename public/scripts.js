@@ -40,8 +40,8 @@ document.addEventListener('DOMContentLoaded', () => {
             clearInterval(checkDbInterval);
 
             // Handle document ID in URL path
-            const pathSegments = window.location.pathname.split('/').filter(Boolean);
-            const docId = pathSegments[0];
+            const hash = window.location.hash.substring(1);
+            const docId = hash ? hash.split('/')[0] : null;
             if (docId) {
                 if (!email) {
                     emailModal.classList.add('active');
