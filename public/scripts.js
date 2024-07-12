@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         const documentElement = document.createElement('div');
                         documentElement.classList.add('document');
                         documentElement.innerHTML = `
-                            <a href="#" onclick="openDoc('${data.url}', '${data.type}', '${data.ID}')">
+                            <a href="#" onclick="event.preventDefault(); openDoc('${data.url}', '${data.type}', '${data.ID}')">
                                 <img src="${data.thumbnail}" alt="${data.title}">
                                 <div class="content">
                                     <div class="title">${data.title}</div>
